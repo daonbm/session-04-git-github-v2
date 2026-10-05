@@ -1,15 +1,16 @@
 package com.example.tasks.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
 public class LoginController {
 
-    @GetMapping("/api/login")
-    public String login() {
-        //Implementing login logic here .........
-        return "Logging in...";
+    @PostMapping("/api/login")
+    public ResponseEntity<?> login() {
+        //Implementing login logic here
+        return ResponseEntity.ok("Logged In");
     }
 }
