@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LoginController {
 
-    @PostMapping("/api/login")
+    @PostMapping("/api/auth/login")
     public ResponseEntity<?> login() {
         //Implementing login logic here
         return ResponseEntity.ok("Logged In");
