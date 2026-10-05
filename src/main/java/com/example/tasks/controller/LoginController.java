@@ -1,5 +1,6 @@
 package com.example.tasks.controller;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,7 +10,7 @@ public class LoginController {
 
 
     @PostMapping("/api/login")
-    public ResponseEntitiy<?> login() {
+    public ResponseEntity<?> login() {
         //Implementing login logic here
         return null;
     }
